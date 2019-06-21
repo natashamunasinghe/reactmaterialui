@@ -22,6 +22,10 @@ import SectionsPage from "views/SectionsPage/SectionsPage.jsx";
 import ShoppingCartPage from "views/ShoppingCartPage/ShoppingCartPage.jsx";
 import SignupPage from "views/SignupPage/SignupPage.jsx";
 import ErrorPage from "views/ErrorPage/ErrorPage.jsx";
+import SantiagoPage from "views/LocationsPage/ChilePage/SantiagoPage/SantiagoPage.jsx";
+import ColchaguaPage from "views/LocationsPage/ChilePage/ColchaguaPage/ColchaguaPage.jsx";
+import PatagoniaPage from "views/LocationsPage/ChilePage/PatagoniaPage/PatagoniaPage.jsx";
+import ValparaisoPage from "views/LocationsPage/ChilePage/ValparaisoPage/ValparaisoPage.jsx";
 
 var hist = createBrowserHistory();
 
@@ -29,6 +33,22 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/about-us" component={AboutUsPage} />
+      <Route exact path="/locations/chile/santiago" component={SantiagoPage} />
+      <Route
+        exact
+        path="/locations/chile/colchagua"
+        component={ColchaguaPage}
+      />
+      <Route
+        exact
+        path="/locations/chile/patagonia"
+        component={PatagoniaPage}
+      />
+      <Route
+        exact
+        path="/locations/chile/valparaiso"
+        component={ValparaisoPage}
+      />
       <Route path="/blog-post" component={BlogPostPage} />
       <Route path="/blog-posts" component={BlogPostsPage} />
       <Route path="/components" component={ComponentsPage} />

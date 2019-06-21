@@ -1,88 +1,68 @@
 import React from "react";
-// nodejs library that concatenates classes
-import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
+import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.jsx";
+import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import Parallax from "components/Parallax/Parallax.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import Parallax from "components/Parallax/Parallax.jsx";
+//sections for this page
+import SectionTextSantiago from "./Sections/SectionTextSantiago.jsx";
 
-import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
+import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.jsx";
 
-// Sections for this page
-import SectionProduct from "./Sections/SectionProduct.jsx";
-import LocationNavPills from "./Sections/LocationNavPills";
-import SectionTestimonials from "./Sections/SectionsTestimonials";
-
-class LandingPage extends React.Component {
+class SantiagoPage extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   }
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes } = this.props;
     return (
       <div>
         <Header
-          color="transparent"
-          brand="...because life is meant to be coded :)"
+          brand="Chile Adventures"
           links={<HeaderLinks dropdownHoverColor="info" />}
           fixed
+          color="transparent"
           changeColorOnScroll={{
             height: 300,
             color: "info"
           }}
-          {...rest}
         />
-        <Parallax
-          image="https://reactchileapp.s3-ap-southeast-2.amazonaws.com/Patagonia_1.JPG"
-          filter="dark"
-          height="300px"
-        >
+        <Parallax image="https://reactchileapp.s3-ap-southeast-2.amazonaws.com/santiago_1.JPG">
           <div className={classes.container}>
-            <GridContainer>
-              <GridItem xs={12} sm={6} md={6}>
-                <h1 className={classes.title}>Just you & me</h1>
-                <h4>
-                  As we explore, laugh, cry & everything in-between, I wanted us
-                  to have something to remember this journey by.
+            <GridContainer justify="center">
+              <GridItem md={8} className={classes.textCenter}>
+                <h1 className={classes.title}>Santiago.</h1>
+                <h4 className={classes.subtitle}>
+                  Possibly the cleanest city in the world?
                 </h4>
-                <h4>I hope you like it</h4>
                 <br />
-                <Button
-                  color="danger"
-                  size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fas fa-play" />
-                  Watch video
+                <Button color="rose" size="lg" round>
+                  <FormatAlignLeft /> Read Article
                 </Button>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
-        <div className={classNames(classes.main, classes.mainRaised)}>
-          {/* <div className={classes.container}> */}
-          <SectionProduct />
-          <LocationNavPills />
-          <SectionTestimonials />
+        <div className={classes.main}>
+          <div className={classes.container}>
+            <SectionTextSantiago />
+          </div>
         </div>
-        {/* </div> */}
         <Footer
           content={
             <div>
-              {/* <div className={classes.left}>
+              <div className={classes.left}>
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
                     <a
@@ -117,10 +97,12 @@ class LandingPage extends React.Component {
                     </a>
                   </ListItem>
                 </List>
-              </div> */}
+              </div>
               <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()}. Made with{" "}
-                <Favorite className={classes.icon} /> by Me.
+                &copy; {1900 + new Date().getYear()} , made with{" "}
+                <Favorite className={classes.icon} /> by{" "}
+                <a href="https://www.creative-tim.com">Creative Tim</a> for a
+                better web.
               </div>
             </div>
           }
@@ -130,4 +112,4 @@ class LandingPage extends React.Component {
   }
 }
 
-export default withStyles(landingPageStyle)(LandingPage);
+export default withStyles(blogPostPageStyle)(SantiagoPage);

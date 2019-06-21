@@ -21,10 +21,7 @@ function SectionLocationItaly({ ...props }) {
           <GridContainer>
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
-                <a
-                  href="https://www.creative-tim.com/product/material-kit-react"
-                  target="_blank"
-                >
+                <a href="https://en.wikipedia.org/wiki/Rome" target="_blank">
                   <CardHeader image plain>
                     <img
                       src={
@@ -35,10 +32,7 @@ function SectionLocationItaly({ ...props }) {
                   </CardHeader>
                 </a>
                 <CardBody plain>
-                  <a
-                    href="https://www.creative-tim.com/product/material-kit-react"
-                    target="_blank"
-                  >
+                  <a href="https://en.wikipedia.org/wiki/Rome" target="_blank">
                     <h4 className={classes.cardTitle}>Rome</h4>
                   </a>
                   <h6 className={classes.description}>The Capital</h6>
@@ -53,7 +47,7 @@ function SectionLocationItaly({ ...props }) {
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
                 <a
-                  href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react"
+                  href="https://en.wikipedia.org/wiki/Florence"
                   target="_blank"
                 >
                   <CardHeader image plain>
@@ -65,7 +59,7 @@ function SectionLocationItaly({ ...props }) {
                 </a>
                 <CardBody plain>
                   <a
-                    href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react"
+                    href="https://en.wikipedia.org/wiki/Florence"
                     target="_blank"
                   >
                     <h4 className={classes.cardTitle}>Florence</h4>
@@ -81,10 +75,7 @@ function SectionLocationItaly({ ...props }) {
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
-                <a
-                  href="https://www.creative-tim.com/product/now-ui-dashboard-pro-react"
-                  target="_blank"
-                >
+                <a href="https://en.wikipedia.org/wiki/Venice" target="_blank">
                   <CardHeader image plain>
                     <img
                       src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fcolorsnspirits.com%2Fwp-content%2Fuploads%2F2014%2F01%2Fvenice-and-its-paradise.jpg&f=1"
@@ -102,7 +93,7 @@ function SectionLocationItaly({ ...props }) {
                 </a>
                 <CardBody plain>
                   <a
-                    href="https://www.creative-tim.com/product/now-ui-dashboard-pro-react"
+                    href="https://en.wikipedia.org/wiki/Venice"
                     target="_blank"
                   >
                     <h4 className={classes.cardTitle}>Venice</h4>
@@ -118,23 +109,20 @@ function SectionLocationItaly({ ...props }) {
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
-                <a
-                  href="https://www.creative-tim.com/product/now-ui-dashboard-pro-react"
-                  target="_blank"
-                >
+                <a href="https://en.wikipedia.org/wiki/Perugia" target="_blank">
                   <CardHeader image plain>
                     <img
                       src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fflexitreks.com%2Fwp-content%2Fuploads%2F2015%2F08%2FAssisi-Umbria-ItalyIV.jpg&f=1"
-                      alt="Peruglia"
+                      alt="Perugia"
                     />
                   </CardHeader>
                 </a>
                 <CardBody plain>
                   <a
-                    href="https://www.creative-tim.com/product/now-ui-dashboard-pro-react"
+                    href="https://en.wikipedia.org/wiki/Perugia"
                     target="_blank"
                   >
-                    <h4 className={classes.cardTitle}>Peruglia</h4>
+                    <h4 className={classes.cardTitle}>Perugia</h4>
                   </a>
                   <h6 className={classes.description}>The Wedding...</h6>
                   <p
