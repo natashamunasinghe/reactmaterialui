@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
@@ -65,14 +66,11 @@ class SantiagoPage extends React.Component {
               <div className={classes.left}>
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/"
-                      className={classes.block}
-                    >
-                      Creative Tim
-                    </a>
+                    <Link to="/" className={classes.block}>
+                      Take Me Home
+                    </Link>
                   </ListItem>
-                  <ListItem className={classes.inlineBlock}>
+                  {/* <ListItem className={classes.inlineBlock}>
                     <a
                       href="https://www.creative-tim.com/presentation"
                       className={classes.block}
@@ -95,14 +93,12 @@ class SantiagoPage extends React.Component {
                     >
                       Licenses
                     </a>
-                  </ListItem>
+                  </ListItem> */}
                 </List>
               </div>
               <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made with{" "}
-                <Favorite className={classes.icon} /> by{" "}
-                <a href="https://www.creative-tim.com">Creative Tim</a> for a
-                better web.
+                &copy; {1900 + new Date().getYear()}. Made with{" "}
+                <Favorite className={classes.icon} /> by Me.{" "}
               </div>
             </div>
           }
