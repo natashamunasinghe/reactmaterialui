@@ -46,13 +46,31 @@ function SectionTextColchagua({ ...props }) {
         <GridItem xs={12} sm={10} md={10} className={classes.section}>
           <GridContainer>
             <GridItem xs={12} sm={4} md={4}>
-              <img src={blog4} alt="..." className={imgClasses} />
+              <img
+                src={
+                  "https://reactchileapp.s3-ap-southeast-2.amazonaws.com/chile-colchagua-7.jpg"
+                }
+                alt="Colchagua"
+                className={imgClasses}
+              />
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
-              <img src={blog3} alt="..." className={imgClasses} />
+              <img
+                src={
+                  "https://reactchileapp.s3-ap-southeast-2.amazonaws.com/chile-colchagua-1.jpg"
+                }
+                alt="Colchagua"
+                className={imgClasses}
+              />
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
-              <img src={blog1} alt="..." className={imgClasses} />
+              <img
+                src={
+                  "https://reactchileapp.s3-ap-southeast-2.amazonaws.com/chile-colchagua-4.jpg"
+                }
+                alt="Colchagua"
+                className={imgClasses}
+              />
             </GridItem>
           </GridContainer>
         </GridItem>

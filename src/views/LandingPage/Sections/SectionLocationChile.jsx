@@ -27,7 +27,7 @@ function SectionLocationChile({ ...props }) {
                   <CardHeader image plain>
                     <img
                       src={
-                        "https://reactchileapp.s3-ap-southeast-2.amazonaws.com/santiago_1.JPG"
+                        "https://reactchileapp.s3-ap-southeast-2.amazonaws.com/chile-santiago-1.JPG"
                       }
                       alt="Santiago"
                     />
@@ -83,7 +83,7 @@ function SectionLocationChile({ ...props }) {
                 <Link to="locations/chile/colchagua">
                   <CardHeader image plain>
                     <img
-                      src="https://s3.amazonaws.com/creativetim_bucket/products/73/original/opt_nudp_react_thumbnail.jpg?1518533306"
+                      src="https://reactchileapp.s3-ap-southeast-2.amazonaws.com/chile-colchagua-3.jpg"
                       alt="Colchagua Valley"
                     />
                   </CardHeader>
@@ -110,7 +110,7 @@ function SectionLocationChile({ ...props }) {
                 <Link to="locations/chile/patagonia">
                   <CardHeader image plain>
                     <img
-                      src="https://s3.amazonaws.com/creativetim_bucket/products/73/original/opt_nudp_react_thumbnail.jpg?1518533306"
+                      src="https://reactchileapp.s3-ap-southeast-2.amazonaws.com/chile-patagonia-15.jpg"
                       alt="Patagonia"
                     />
                   </CardHeader>

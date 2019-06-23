@@ -39,7 +39,7 @@ class PatagoniaPage extends React.Component {
             color: "info"
           }}
         />
-        <Parallax image="https://reactchileapp.s3-ap-southeast-2.amazonaws.com/santiago_1.JPG">
+        <Parallax image="https://reactchileapp.s3-ap-southeast-2.amazonaws.com/chile-patagonia-15.jpg">
           <div className={classes.container}>
             <GridContainer justify="center">
               <GridItem md={8} className={classes.textCenter}>
